@@ -11,6 +11,7 @@
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 1.2em;
     color: #EAC162;
+    transition: 0.3s;
 }
 .header {
     /* display: inline-block; */
@@ -31,8 +32,11 @@
     /* border: 1px solid blue; */
     padding: 15px 20px;
 }
+.aBeastlogo {
+    width: 200px;
+}
 .beastlogo {
-    width: 10%;
+    width: 100%;
     max-width: 150px;
     margin: 2%;
 }
@@ -72,6 +76,7 @@
     border-radius: 5px;
     padding: 5px;
     margin: 0 auto;
+    transition: 400ms;
 }
 .menu:hover {
     color: #eac162;
@@ -92,7 +97,7 @@
     max-width: 1400px;
     min-height: 700px;
     margin: auto;
-    padding: 20px;
+    padding: 20px 40px;
 }
 .imgLeft {
     background-image: url(../media/beast1.jpg);
@@ -100,6 +105,7 @@
     height: 25vh;
     background-size: cover;
     border-radius: 10px 10px 0 0;
+    transition: 0.6s;
 }
 .imgRight {
     background-image: url(../media/beastfemenino.jpg);
@@ -108,6 +114,11 @@
     background-size: cover;
     background-position: center;
     border-radius: 0 0 10px 10px;
+    transition: 0.6s;
+}
+.imgLeft:hover, .imgRight:hover, .imgFuncional:hover, .imgMiniBeast:hover {
+    box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.615);
+    transition: 0.6s;
 }
 .imgFuncional {
     background-image: url(../media/funcional.jpg);
@@ -116,6 +127,7 @@
     background-size: cover;
     background-position: center;
     border-radius: 10px;
+    transition: 0.6s;
 }
 .imgMiniBeast {
     background-image: url(../media/minibeast.jpg);
@@ -124,9 +136,17 @@
     background-size: cover;
     background-position: center;
     border-radius: 10px;
+    transition: 0.6s;
 }
 .article {
+    padding: 10px;
     margin-bottom: 30px;
+    transition: 0.6s;
+}
+.article:hover {
+    background-color: rgba(255, 255, 255, 0.094);
+    border-radius: 20px;
+    transition: 0.6s;
 }
 .article .text {
     color: antiquewhite;
@@ -184,10 +204,15 @@
 }
 .comoEntrenamosVideo {
     width: 100%;
+    max-width: 400px;
+    max-height: 700px;
     border-radius: 20px;
+    justify-self: center;
 }
-.comoEntrenamosVideo .subTitulo {
+.comoEntrenamosVideo{
     width: 100%;
+}
+.subTitulo {
     padding-bottom: 25px;
     text-align: center;
 }
@@ -220,7 +245,7 @@
 }
 .galeriaImg:hover {
     transform: scale(105%);
-    transition: 500ms;
+    /* transition: 500ms; */
     box-shadow: 0px 10px 13px -7px #0000006c, 5px 5px 15px 5px rgba(0, 0, 0, 0.575);
 }
 
@@ -328,6 +353,10 @@
     /* border: 1px solid blue; */
     margin-bottom: 5px;
 }
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
 
 
 @media only screen and (min-width:480px) {
@@ -366,10 +395,12 @@
     .article2 {
         margin: 10px;
         grid-column: 1/2;
+        align-self: baseline;
     }
     .article3 {
         margin: 10px;
         grid-column: 2/3;
+        align-self: baseline;
     }
     .imgFuncional {
         height: 50vh;
@@ -465,4 +496,8 @@
     .nav {
         font-size: 1.4em;
     }
+    .contenedorTexto {
+        font-size: 2em;
+    }
 }
+  
