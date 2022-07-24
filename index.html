@@ -1,29 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Beast House - Kickboxing Gym</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body class="body">
-    <header class="header">
+     <!-- INICIO NAV-BAR BOOTSTRAP -->
+     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid subHeader">
+            <a title="beastlogo" href="index.html" class="navbar-brand"><img class="beastlogo" src="media/beastlogo.png"
+                    alt="beastlogo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link menu" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html">HORARIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/comoentrenamos.html">COMO ENTRENAMOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/galeria.html">GALERIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/noticias.html">NOTICIAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- FIN NAV-BAR BOOTSTRAP -->
+
+    <!-- <header class="header">
         <div class="subHeader">
-            <a title="beastlogo" href="index.html" class="aBeastlogo"><img class="beastlogo" src="media/beastlogo.jpg" alt="beastlogo"></a>
+            <a title="beastlogo" href="index.html" class="aBeastlogo"><img class="beastlogo" src="media/beastlogo.jpg"
+                    alt="beastlogo"></a>
             <nav class="nav">
                 <ul class="ul">
                     <li class="list list1"><a class="menu menu1" href="index.html">HOME</a></li>
                     <li class="list list2"><a class="menu menu2" href="pages/contacto.html">HORARIOS</a></li>
-                    <li class="list list3"><a class="menu menu3" href="pages/comoentrenamos.html">COMO ENTRENAMOS</a></li>
+                    <li class="list list3"><a class="menu menu3" href="pages/comoentrenamos.html">COMO ENTRENAMOS</a>
+                    </li>
                     <li class="list list4"><a class="menu menu4" href="pages/galeria.html">GALERIA</a></li>
                     <li class="list list5"><a class="menu menu5" href="pages/noticias.html">NOTICIAS</a></li>
                     <li class="list list6"><a class="menu menu6" href="pages/contacto.html">CONTACTO</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
+    </header> -->
     <main class="main">
         <div class="subMain">
             <article class="article article1">
@@ -31,28 +74,33 @@
                 <div class="imgRight"></div>
                 <div class="contenedorTexto">
                     <h2 class="subtitle subtitle1">Kickboxing</h2>
-                    <p class="text text1">Crees que para practicar el Kickboxing hace falta tener cierta edad? Para nada! En nuestro gimnasio entrenan hombres y mujeres de 13 a 60 años</p>
+                    <p class="text text1">Crees que para practicar el Kickboxing hace falta tener cierta edad? Para
+                        nada! En nuestro gimnasio entrenan hombres y mujeres de 13 a 60 años</p>
                 </div>
             </article>
             <article class="article article2">
                 <div class="img2 imgFuncional"></div>
                 <div class="contenedorTexto">
                     <h2 class="subtitle subtitle2">Funcional</h2>
-                    <p class="text text2">Las clases son organizadas a fin de que cada uno participe desde sus capacidades, asi que no tenés que preocuparte por ser principiante, el profesor se ocupará de vos y te dará ejercicios acordes a tu nivel</p>
+                    <p class="text text2">Las clases son organizadas a fin de que cada uno participe desde sus
+                        capacidades, asi que no tenés que preocuparte por ser principiante, el profesor se ocupará de
+                        vos y te dará ejercicios acordes a tu nivel</p>
                 </div>
             </article>
             <article class="article article3">
                 <div class="img2 imgMiniBeast"></div>
                 <div class="contenedorTexto">
                     <h2 class="subtitle subtitle3">Animate!</h2>
-                    <p class="text text3">Nadie comienza sabiendo, así que la idea es que vayas aprendiendo destrezas y eso es lo que lo hace un deporte divertido. Además te brinda herramientas de defensa personal y te aumentará tu confianza y seguridad en vos mismo</p>
+                    <p class="text text3">Nadie comienza sabiendo, así que la idea es que vayas aprendiendo destrezas y
+                        eso es lo que lo hace un deporte divertido. Además te brinda herramientas de defensa personal y
+                        te aumentará tu confianza y seguridad en vos mismo</p>
                 </div>
             </article>
         </div>
     </main>
     <footer class="footer">
         <div class="subFooter">
-            <img class="logo_footer" src="media/beastlogo.jpg" alt="">
+            <img class="logo_footer" src="media/beastlogo.png" alt="">
             <div class="subSubFooter subSubFooter1">
                 <span><strong>Gimnasio de Artes Marciales</strong></span>
                 <p>José Rucci 452 - Villa María, Córdoba, Argentina</p><br>
@@ -69,5 +117,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
