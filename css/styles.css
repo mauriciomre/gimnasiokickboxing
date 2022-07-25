@@ -7,23 +7,36 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 .body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 1.2em;
     color: #EAC162;
     transition: 0.3s;
 }
-.subHeader {
-    max-width: 800px;
-    justify-content: center;
-
+.padding-top {
+    padding-top: 180px;
 }
+.navbar .container-fluid {
+    max-width: 1000px;
+}
+
+.navbar-nav {
+    flex-wrap: wrap;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 1vw;
+}
+
 
 .beastlogo {
     width: 100%;
-    max-width: 100px;
+    max-width: 90px;
+    min-width: 50px;
     margin: 2%;
-    justify-self: center;
 }
 
 .main {
@@ -117,7 +130,7 @@
 }
 .logo_footer{
     width: 100px;
-    max-width: 150px;
+    max-width: 140px;
     height: auto;
     margin: 10px;
     /* border: 1px solid red; */
@@ -176,6 +189,13 @@
 }
 
 /* GALERIA */
+.carousel-item {
+    max-height: 600px;
+}
+.carousel-inner {
+    border-radius: 20px;
+}
+
 .containerGaleriaImg {
     /* float: left; */
     /* border: 1px solid rgb(255, 0, 0); */
@@ -195,12 +215,10 @@
 }
 
 /* CONTACTO */
-.contactoForm {
-    /* border: 1px solid red; */
-    width: 100%;
-    margin: 30px auto;
-    /* border: 1px solid red; */
-
+.subMainContacto {
+    max-width: 1400px;
+    min-height: 1000px;
+    background-color: rgba(0, 0, 0, 0.789);
 }
 .contactoSpan {
     display: block;
@@ -236,12 +254,9 @@
 
 /* HORARIOS */
 .asideHorarios {
-    text-align: center;
-    padding: 2vh;
     /* border: 1px solid blue; */
     background-color: rgba(0, 0, 0, 0.59);
     border-radius: 10px;
-
 }
 .horarios {
     list-style-type: none;
@@ -373,14 +388,6 @@
         margin-left: 3vw;
     }
 
-    /* HORARIOS */
-    .contactoForm {
-        margin: 10px;
-    }
-    .asideHorarios {
-        margin: 10px;
-    }
-
     /* GALERIA */
     .subMainContainer {
         display: grid;
@@ -438,9 +445,6 @@
     }
 }
 @media only screen and (min-width:1220px) {
-    .nav {
-        font-size: 1.4em;
-    }
     .contenedorTexto {
         font-size: 2em;
     }

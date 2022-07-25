@@ -7,23 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Beast House - Kickboxing Gym</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body class="body">
     <!-- INICIO NAV-BAR BOOTSTRAP -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top h4">
         <div class="container-fluid">
-            <a title="beastlogo" href="../index.html" class="navbar-brand"><img class="beastlogo" src="../media/beastlogo.png"
-                    alt="beastlogo"></a>
+            <a title="beastlogo" href="../index.html" class="navbar-brand"><img class="beastlogo"
+                    src="../media/beastlogo.png" alt="beastlogo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="../index.html">HOME</a>
@@ -48,8 +48,53 @@
         </div>
     </nav>
     <!-- FIN NAV-BAR BOOTSTRAP -->
-    <main class="main">
-        <div class="subMain">
+    <main class="container-fluid main">
+        <div class="subMainContacto container-fluid padding-top pb-4 px-5">
+
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../media/galeriaimg1.jpg" alt="foto1" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../media/galeriaimg2.jpg" alt="foto2" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../media/galeriaimg3.jpg" alt="foto3" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../media/galeriaimg4.jpg" alt="foto4" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../media/galeriaimg5.jpg" alt="foto5" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../media/galeriaimg6.jpg" alt="foto6" class="d-block w-100">
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
             <div class="subMainContainer">
                 <div class="containerGaleriaImg containerGaleriaImg1"><img class="galeriaImg galeriaImg1"
                         src="../media/galeriaimg1.jpg" alt=""></div>
@@ -94,9 +139,9 @@
             </div>
         </div>
     </main>
-    <footer class="footer">
+    <footer class="footer bg-dark">
         <div class="subFooter">
-            <img class="logo_footer" src="../media/beastlogo.jpg" alt="">
+            <img class="logo_footer" src="../media/beastlogo.png" alt="">
             <div class="subSubFooter subSubFooter1">
                 <span><strong>Gimnasio de Artes Marciales</strong></span>
                 <p>José Rucci 452 - Villa María, Córdoba, Argentina</p><br>
@@ -113,7 +158,7 @@
             </div>
         </div>
     </footer>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
 </body>
