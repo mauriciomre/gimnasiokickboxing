@@ -1,0 +1,104 @@
+/* COMO ENTRENAMOS */
+.comoEntrenamosArticle {
+    /* border: 1px solid red; */
+    padding: 5px;
+    margin: 20px;
+}
+.comoEntrenamosImg {
+    width: 100%;
+    /* border: 1px solid blue; */
+    border-radius: 20px;
+    transition: 500ms;
+
+}
+.comoEntrenamosVideo {
+    width: 100%;
+    max-width: 400px;
+    max-height: 700px;
+    border-radius: 20px;
+    justify-self: center;
+}
+.comoEntrenamosVideo{
+    width: 100%;
+}
+.subTitulo {
+    padding-bottom: 25px;
+    text-align: center;
+}
+.comoEntrenamosSubMain2Texto {
+    padding: 7px 0;
+    background-color: rgba(35, 29, 12, 0.671);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+    color: #eddfc0;
+    text-align: center;
+}
+.contenedorTexto {
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+/* GALERIA */
+.carousel-item {
+    max-height: 600px;
+}
+.carousel-inner {
+    border-radius: 20px;
+}
+
+.containerGaleriaImg {
+    /* float: left; */
+    /* border: 1px solid rgb(255, 0, 0); */
+    margin: 10px;
+}
+.galeriaImg {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid blue; */
+    border-radius: 20px;
+    transition: 500ms;
+}
+.galeriaImg:hover {
+    transform: scale(105%);
+    /* transition: 500ms; */
+    box-shadow: 0px 10px 13px -7px #0000006c, 5px 5px 15px 5px rgba(0, 0, 0, 0.575);
+}
+
+/* CONTACTO */
+.subMainContacto {
+    max-width: 1400px;
+    min-height: 1000px;
+    background-color: rgba(0, 0, 0, 0.789);
+}
+.contactoSpan {
+    display: block;
+    /* border: 1px solid blue; */
+    margin-bottom: 10px;
+    background-color: #eac162a4;
+    border-radius: 10px;
+}
+.contactoInput {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    color: white;
+}
+.contactoInput::placeholder {
+    color: wheat;
+
+}
+.contactoSubmit {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 800;
+    background-color: #e5a717c3;
+    color: white;
+}
+.contactoSubmit:hover {
+    cursor: pointer;
+    background-color: #e5a71758;
+    transition: 500ms;
+}

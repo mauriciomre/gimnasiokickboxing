@@ -7,80 +7,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 .body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 1.2em;
     color: #EAC162;
     transition: 0.3s;
 }
-.header {
-    /* display: inline-block; */
-    /* margin: auto; */
-    background-color: black;
-    /* width: 100%; */
-    /* border: 1px solid red; */
+.padding-top {
+    padding-top: 180px;
 }
-.subHeader {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    /* flex-direction: row-reverse; */
-    /* align-items: center; */
-    /* width: 100%; */
-    /* height: auto; */
-    /* margin: auto; */
-    /* border: 1px solid blue; */
-    padding: 15px 20px;
+.navbar .container-fluid {
+    max-width: 1000px;
 }
-.aBeastlogo {
-    width: 200px;
+
+.navbar-nav {
+    flex-wrap: wrap;
 }
+
+.navbar-nav .nav-item {
+    margin-right: 1vw;
+}
+
+
 .beastlogo {
     width: 100%;
-    max-width: 150px;
+    max-width: 90px;
+    min-width: 50px;
     margin: 2%;
 }
-/* .fa-bars {
-    font-size: x-large;
-    color: white;
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 5px;
-    margin: 10px;
-} */
-.nav {
-    width: 100%;
-}
-.ul {
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    /* border: 1px solid red; */
-    margin: auto 5vw;
 
-}
-.list {
-    list-style: none;
-    margin: 1%;
-    background-color: rgba(255, 255, 255, 0.060);
-    border-radius: 5px;
-    padding: 5px;
-    text-align: center;
-    
-}
-.menu {
-    text-decoration: none;
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 0 auto;
-    transition: 400ms;
-}
-.menu:hover {
-    color: #eac162;
-}
 .main {
     /* min-width: 900px; */
     /* width: 100%; */
@@ -90,14 +48,11 @@
     background-size: contain;
 }
 .subMain{
-    align-items: center;
     background-color: rgba(0, 0, 0, 0.789);
-    /* width: 1200px; */
-    width: 100%;
     max-width: 1400px;
     min-height: 700px;
+    padding: 170px 40px 20px 40px;
     margin: auto;
-    padding: 20px 40px;
 }
 .imgLeft {
     background-image: url(../media/beast1.jpg);
@@ -172,7 +127,7 @@
 }
 .logo_footer{
     width: 100px;
-    max-width: 150px;
+    max-width: 140px;
     height: auto;
     margin: 10px;
     /* border: 1px solid red; */
@@ -231,6 +186,13 @@
 }
 
 /* GALERIA */
+.carousel-item {
+    max-height: 600px;
+}
+.carousel-inner {
+    border-radius: 20px;
+}
+
 .containerGaleriaImg {
     /* float: left; */
     /* border: 1px solid rgb(255, 0, 0); */
@@ -250,12 +212,10 @@
 }
 
 /* CONTACTO */
-.contactoForm {
-    /* border: 1px solid red; */
-    width: 100%;
-    margin: 30px auto;
-    /* border: 1px solid red; */
-
+.subMainContacto {
+    max-width: 1400px;
+    min-height: 1000px;
+    background-color: rgba(0, 0, 0, 0.789);
 }
 .contactoSpan {
     display: block;
@@ -291,12 +251,9 @@
 
 /* HORARIOS */
 .asideHorarios {
-    text-align: center;
-    padding: 2vh;
     /* border: 1px solid blue; */
     background-color: rgba(0, 0, 0, 0.59);
     border-radius: 10px;
-
 }
 .horarios {
     list-style-type: none;
@@ -368,7 +325,7 @@
         grid-template-columns: 1fr 1fr;
     }
     .article1 {
-        padding: 10px;
+        padding: 20px;
         display: grid;
         grid-template-columns: 40% 60%;
         grid-column: 1/3;
@@ -428,14 +385,6 @@
         margin-left: 3vw;
     }
 
-    /* HORARIOS */
-    .contactoForm {
-        margin: 10px;
-    }
-    .asideHorarios {
-        margin: 10px;
-    }
-
     /* GALERIA */
     .subMainContainer {
         display: grid;
@@ -493,9 +442,6 @@
     }
 }
 @media only screen and (min-width:1220px) {
-    .nav {
-        font-size: 1.4em;
-    }
     .contenedorTexto {
         font-size: 2em;
     }

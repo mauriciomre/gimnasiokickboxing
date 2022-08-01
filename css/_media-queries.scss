@@ -1,0 +1,189 @@
+@media only screen and (min-width:480px) {
+    .main {
+        background-size: cover;
+
+        .subMain {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .article1 {
+                padding: 20px;
+                display: grid;
+                grid-template-columns: 40% 60%;
+                grid-column: 1/3;
+
+                .imgLeft {
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                    min-height: 140px;
+                }
+
+                .imgRight {
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                    min-height: 140px;
+                }
+
+                .contenedorTexto {
+                    grid-column: 2/3;
+                    grid-row: 1/3;
+                    margin-left: 3vw;
+
+                    .text {
+                        position: relative;
+                        top: 5vh;
+                    }
+                }
+            }
+
+            .article2 {
+                margin: 10px;
+                grid-column: 1/2;
+                align-self: baseline;
+
+                .imgFuncional {
+                    height: 50vh;
+                    min-height: 400px;
+                }
+            }
+
+            .article3 {
+                margin: 10px;
+                grid-column: 2/3;
+                align-self: baseline;
+
+                .imgMiniBeast {
+                    height: 50vh;
+                    min-height: 400px;
+                }
+            }
+        }
+    }
+    
+    .footer {
+        .subFooter {
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+
+            .subSubFooter {
+                grid-column: 1/2;
+                margin-left: 3vw;
+            }
+            
+            .logo_footer {
+                width: 50%;
+                grid-column: 2/3;
+                grid-row: 1/4;
+                justify-self: center;
+                /* border: 1px solid blue; */
+                /* margin-left: 20vw; */
+            }
+        }
+    }
+
+    .subMainContainer {
+        display: grid;
+        grid-column: 1/3;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media only screen and (min-width:768px) {
+    .main{
+        .subMain {
+            padding-bottom: 150px;
+        }
+    }
+
+    .subMainContainer {
+        grid-column: 1/4;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .containerGaleriaImg1 {
+        grid-column: 1/3;
+        grid-row: 1/3;
+        
+    }
+    .containerGaleriaImg8 {
+        grid-column: 2/4;
+        grid-row: 4/6;
+    }
+
+    .footer {
+        .subFooter {
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .subSubFooter1 {
+                grid-column: 1/3;
+            }
+            .subSubFooter2 {
+                grid-column: 1/2;
+            }
+            .subSubFooter3 {
+                grid-column: 2/3;
+            }
+            .logo_footer {
+                grid-column: 3/4;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    .navbar {
+        .container-fluid {
+            .navbar-brand {
+                .beastlogo {
+                    min-width: 90px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .subFooter {
+            display: flex;
+            justify-content: center;
+            
+            .logo_footer{
+                justify-self: center;
+            }
+        }
+    }
+    
+    .main {
+
+        .subMain{
+        
+            .article {
+                .contenedorTexto{
+                    font-size: $font-size-tablet;
+
+                    // .subtitle {
+                    // }
+        
+                    // .text {
+                    // }
+                }
+                .imgLeft {
+                    max-height: 250px;
+                }
+                .imgRight{
+                    max-height: 250px;
+                }
+                .imgFuncional {
+                    max-height: 500px;
+                }
+                .imgMiniBeast {
+                    max-height: 500px;
+                }
+            }
+        }
+    }  
+}
+@media only screen and (min-width:1220px) {
+    .contenedorTexto {
+        font-size: $font-size-desktop;
+    }
+}
