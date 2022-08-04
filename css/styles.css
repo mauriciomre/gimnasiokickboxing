@@ -200,6 +200,10 @@ html {
   margin-left: 10px;
 }
 
+.comoEntrenamos-ul {
+  padding-left: 0;
+}
+
 /* GALERIA */
 .carousel-item {
   max-height: 600px;
@@ -227,56 +231,6 @@ html {
   transform: scale(105%);
   /* transition: 500ms; */
   box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.4235294118), 5px 5px 15px 5px rgba(0, 0, 0, 0.575);
-}
-
-/* CONTACTO */
-.subMainContacto {
-  max-width: 1400px;
-  min-height: 1000px;
-  background-color: rgba(0, 0, 0, 0.789);
-}
-
-.contactoSpan {
-  display: block;
-  /* border: 1px solid blue; */
-  margin-bottom: 10px;
-  background-color: rgba(234, 193, 98, 0.6431372549);
-  border-radius: 10px;
-}
-
-.contactoInput {
-  width: 100%;
-  padding: 10px;
-  background: none;
-  border: none;
-  color: white;
-}
-
-.contactoInput::-moz-placeholder {
-  color: wheat;
-}
-
-.contactoInput:-ms-input-placeholder {
-  color: wheat;
-}
-
-.contactoInput::placeholder {
-  color: wheat;
-}
-
-.contactoSubmit {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  font-weight: 800;
-  background-color: rgba(229, 167, 23, 0.7647058824);
-  color: white;
-}
-
-.contactoSubmit:hover {
-  cursor: pointer;
-  background-color: rgba(229, 167, 23, 0.3450980392);
-  transition: 500ms;
 }
 
 /* HORARIOS */
@@ -350,6 +304,56 @@ html {
 .text-focus-in {
   -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+/* CONTACTO */
+.subMainContacto {
+  max-width: 1400px;
+  min-height: 1000px;
+  background-color: rgba(0, 0, 0, 0.789);
+}
+
+.contactoSpan {
+  display: block;
+  /* border: 1px solid blue; */
+  margin-bottom: 10px;
+  background-color: rgba(234, 193, 98, 0.6431372549);
+  border-radius: 10px;
+}
+
+.contactoInput {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.contactoInput::-moz-placeholder {
+  color: wheat;
+}
+
+.contactoInput:-ms-input-placeholder {
+  color: wheat;
+}
+
+.contactoInput::placeholder {
+  color: wheat;
+}
+
+.contactoSubmit {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 800;
+  background-color: rgba(229, 167, 23, 0.7647058824);
+  color: white;
+}
+
+.contactoSubmit:hover {
+  cursor: pointer;
+  background-color: rgba(229, 167, 23, 0.3450980392);
+  transition: 500ms;
 }
 
 @media only screen and (min-width: 480px) {
