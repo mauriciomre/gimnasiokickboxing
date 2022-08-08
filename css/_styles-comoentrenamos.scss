@@ -1,44 +1,53 @@
 /* COMO ENTRENAMOS */
-.comoEntrenamosArticle {
-    /* border: 1px solid red; */
-    padding: 5px;
-    margin: 20px;
-}
-.comoEntrenamosImg {
-    width: 100%;
-    /* border: 1px solid blue; */
-    border-radius: 20px;
-    transition: 500ms;
+.main {
+    .subMain1 {
+        .comoEntrenamosArticle {
+            /* border: 1px solid red; */
+            padding: 5px;
+            margin: 20px;
 
-}
-.comoEntrenamosVideo {
-    width: 100%;
-    max-width: 400px;
-    max-height: 700px;
-    border-radius: 20px;
-    justify-self: center;
-}
-.comoEntrenamosVideo{
-    width: 100%;
-}
-.subTitulo {
-    padding-bottom: 25px;
-    text-align: center;
-}
-.comoEntrenamosSubMain2Texto {
-    padding: 7px 0;
-    background-color: rgba(35, 29, 12, 0.671);
-    border-radius: 10px;
-    margin-bottom: 10px;
-    list-style: none;
-    color: #eddfc0;
-    text-align: center;
-}
-.contenedorTexto {
-    padding-top: 10px;
-    margin-left: 10px;
-}
+            .comoEntrenamosImg {
+                width: 100%;
+                /* border: 1px solid blue; */
+                border-radius: 20px;
+                transition: 500ms;
+            }
+        }
+    }
 
-.comoEntrenamos-ul {
-    padding-left: 0;
+    .subMain2 {
+        .comoEntrenamosVideo {
+            width: 100%;
+            max-width: 400px;
+            max-height: 700px;
+            border-radius: 20px;
+            justify-self: center;
+        }
+
+        .comoEntrenamosVideoTexto {
+            .contenedorTexto {
+                padding-top: 10px;
+                margin-left: 10px;
+
+                .subTitulo {
+                    padding-bottom: 25px;
+                    text-align: center;
+                }
+
+                .comoEntrenamos-ul {
+                    padding-left: 0;
+
+                    .comoEntrenamosSubMain2Texto {
+                        padding: 7px 0;
+                        background-color: rgba(35, 29, 12, 0.671);
+                        border-radius: 10px;
+                        margin-bottom: 10px;
+                        list-style: none;
+                        color: #eddfc0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
 }

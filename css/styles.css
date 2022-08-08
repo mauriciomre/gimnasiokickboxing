@@ -39,19 +39,16 @@ html {
 }
 
 .main {
-  /* min-width: 900px; */
-  /* width: 100%; */
-  /* background-color: black; */
   background-image: url(../media/background.jpeg);
   background-position: center;
   background-size: contain;
 }
 .main .subMain {
+  padding: 170px 10px 20px 10px;
+  margin: auto;
   background-color: rgba(0, 0, 0, 0.789);
   max-width: 1400px;
   min-height: 700px;
-  padding: 170px 10px 20px 10px;
-  margin: auto;
 }
 .main .subMain .article {
   padding: 10px;
@@ -65,64 +62,50 @@ html {
 }
 .main .subMain .article .contenedorTexto .subtitle {
   text-shadow: 2px 2px 5px black;
-  /* border: 1px solid red; */
 }
 .main .subMain .article .contenedorTexto .text {
   color: antiquewhite;
   text-shadow: 2px 2px 5px black;
   margin: 0 8px;
-  /* border: 1px solid blue; */
 }
-.main .subMain .article .imgLeft {
-  background-image: url(../media/beast1.jpg);
+.main .subMain .article .imgLeft, .main .subMain .article .imgRight {
   width: 100%;
-  height: 25vh;
+  height: 25hv;
+  background-image: url(../media/beast1.jpg);
   max-height: 150px;
   background-size: cover;
   border-radius: 10px 10px 0 0;
   transition: 0.6s;
 }
-.main .subMain .article .imgLeft:hover {
+.main .subMain .article .imgLeft:hover, .main .subMain .article .imgRight:hover {
   box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.615);
   transition: 0.6s;
 }
 .main .subMain .article .imgRight {
   background-image: url(../media/beastfemenino.jpg);
-  width: 100%;
-  height: 25vh;
-  max-height: 150px;
-  background-size: cover;
   background-position: center;
   border-radius: 0 0 10px 10px;
-  transition: 0.6s;
 }
 .main .subMain .article .imgRight:hover {
   box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.615);
   transition: 0.6s;
 }
-.main .subMain .article .imgFuncional {
-  background-image: url(../media/funcional.jpg);
+.main .subMain .article .imgFuncional, .main .subMain .article .imgMiniBeast {
   width: 100%;
   height: 80vh;
+  background-image: url(../media/funcional.jpg);
   max-height: 300px;
   background-size: cover;
   background-position: center;
   border-radius: 10px;
   transition: 0.6s;
 }
-.main .subMain .article .imgFuncional:hover {
+.main .subMain .article .imgFuncional:hover, .main .subMain .article .imgMiniBeast:hover {
   box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.615);
   transition: 0.6s;
 }
 .main .subMain .article .imgMiniBeast {
   background-image: url(../media/minibeast.jpg);
-  width: 100%;
-  height: 80vh;
-  max-height: 300px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  transition: 0.6s;
 }
 .main .subMain .article .imgMiniBeast:hover {
   box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.615);
@@ -133,59 +116,55 @@ html {
   width: 100%;
 }
 .footer .subFooter {
-  display: grid;
-  width: 100%;
   padding: 10px;
   margin: 0 auto;
-  /* border: 1px solid red; */
+  display: grid;
+  width: 100%;
 }
 .footer .subFooter .subSubFooter {
   display: block;
   bottom: 40px;
   margin-top: 10px;
   margin: 10px;
-  /* border: 1px solid blue; */
 }
 .footer .subFooter .logo_footer {
   width: 100px;
-  max-width: 140px;
   height: auto;
+  max-width: 140px;
   margin: 10px;
-  /* border: 1px solid red; */
 }
 
 /* COMO ENTRENAMOS */
-.comoEntrenamosArticle {
+.main .subMain1 .comoEntrenamosArticle {
   /* border: 1px solid red; */
   padding: 5px;
   margin: 20px;
 }
-
-.comoEntrenamosImg {
+.main .subMain1 .comoEntrenamosArticle .comoEntrenamosImg {
   width: 100%;
   /* border: 1px solid blue; */
   border-radius: 20px;
   transition: 500ms;
 }
-
-.comoEntrenamosVideo {
+.main .subMain2 .comoEntrenamosVideo {
   width: 100%;
   max-width: 400px;
   max-height: 700px;
   border-radius: 20px;
   justify-self: center;
 }
-
-.comoEntrenamosVideo {
-  width: 100%;
+.main .subMain2 .comoEntrenamosVideoTexto .contenedorTexto {
+  padding-top: 10px;
+  margin-left: 10px;
 }
-
-.subTitulo {
+.main .subMain2 .comoEntrenamosVideoTexto .contenedorTexto .subTitulo {
   padding-bottom: 25px;
   text-align: center;
 }
-
-.comoEntrenamosSubMain2Texto {
+.main .subMain2 .comoEntrenamosVideoTexto .contenedorTexto .comoEntrenamos-ul {
+  padding-left: 0;
+}
+.main .subMain2 .comoEntrenamosVideoTexto .contenedorTexto .comoEntrenamos-ul .comoEntrenamosSubMain2Texto {
   padding: 7px 0;
   background-color: rgba(35, 29, 12, 0.671);
   border-radius: 10px;
@@ -193,15 +172,6 @@ html {
   list-style: none;
   color: #eddfc0;
   text-align: center;
-}
-
-.contenedorTexto {
-  padding-top: 10px;
-  margin-left: 10px;
-}
-
-.comoEntrenamos-ul {
-  padding-left: 0;
 }
 
 /* GALERIA */
@@ -231,33 +201,6 @@ html {
   transform: scale(105%);
   /* transition: 500ms; */
   box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.4235294118), 5px 5px 15px 5px rgba(0, 0, 0, 0.575);
-}
-
-/* HORARIOS */
-.asideHorarios {
-  /* border: 1px solid blue; */
-  background-color: rgba(0, 0, 0, 0.59);
-  border-radius: 10px;
-}
-
-.horarios {
-  list-style-type: none;
-}
-
-.horarios1 {
-  font-size: x-large;
-  margin-bottom: 10px;
-  text-shadow: 1px 1px 2px rgb(58, 32, 5);
-  color: white;
-  text-transform: capitalize;
-}
-
-.horarios2, .horarios6, .horarios8 {
-  font-size: large;
-  margin-top: 15px;
-  margin-bottom: 5px;
-  list-style-type: none;
-  color: rgb(225, 133, 36);
 }
 
 /* NOTICIAS */
@@ -304,6 +247,33 @@ html {
 .text-focus-in {
   -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+/* HORARIOS */
+.asideHorarios {
+  /* border: 1px solid blue; */
+  background-color: rgba(0, 0, 0, 0.59);
+  border-radius: 10px;
+}
+
+.horarios {
+  list-style-type: none;
+}
+
+.horarios1 {
+  font-size: x-large;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgb(58, 32, 5);
+  color: white;
+  text-transform: capitalize;
+}
+
+.horarios2, .horarios6, .horarios8 {
+  font-size: large;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  list-style-type: none;
+  color: rgb(225, 133, 36);
 }
 
 /* CONTACTO */
@@ -364,13 +334,16 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .main .subMain .carousel {
+    grid-column: 1/3;
+  }
   .main .subMain .article1 {
     padding: 20px;
     display: grid;
     grid-template-columns: 40% 60%;
     grid-column: 1/3;
   }
-  .main .subMain .article1 .imgLeft {
+  .main .subMain .article1 .imgLeft, .main .subMain .article1 .article .imgRight, .main .subMain .article .article1 .imgRight {
     grid-column: 1/2;
     grid-row: 1/2;
     min-height: 140px;
@@ -394,7 +367,7 @@ html {
     grid-column: 1/2;
     align-self: baseline;
   }
-  .main .subMain .article2 .imgFuncional {
+  .main .subMain .article2 .imgFuncional, .main .subMain .article2 .article .imgMiniBeast, .main .subMain .article .article2 .imgMiniBeast {
     height: 50vh;
     min-height: 400px;
   }
@@ -420,8 +393,6 @@ html {
     grid-column: 2/3;
     grid-row: 1/4;
     justify-self: center;
-    /* border: 1px solid blue; */
-    /* margin-left: 20vw; */
   }
   .subMainContainer {
     display: grid;
@@ -475,13 +446,13 @@ html {
   .main .subMain .article .contenedorTexto {
     font-size: 1.4em;
   }
-  .main .subMain .article .imgLeft {
+  .main .subMain .article .imgLeft, .main .subMain .article .imgRight {
     max-height: 250px;
   }
   .main .subMain .article .imgRight {
     max-height: 250px;
   }
-  .main .subMain .article .imgFuncional {
+  .main .subMain .article .imgFuncional, .main .subMain .article .imgMiniBeast {
     max-height: 500px;
   }
   .main .subMain .article .imgMiniBeast {

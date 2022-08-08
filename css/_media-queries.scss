@@ -6,6 +6,10 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
 
+            .carousel{
+                grid-column: 1/3;
+            }
+
             .article1 {
                 padding: 20px;
                 display: grid;
@@ -75,8 +79,6 @@
                 grid-column: 2/3;
                 grid-row: 1/4;
                 justify-self: center;
-                /* border: 1px solid blue; */
-                /* margin-left: 20vw; */
             }
         }
     }
@@ -158,7 +160,7 @@
         
             .article {
                 .contenedorTexto{
-                    font-size: $font-size-tablet;
+                    font-size: map-get($fonts, font-size-tablet);
 
                     // .subtitle {
                     // }
@@ -184,6 +186,6 @@
 }
 @media only screen and (min-width:1220px) {
     .contenedorTexto {
-        font-size: $font-size-desktop;
+        font-size: map-get($fonts, font-size-desktop);
     }
 }
