@@ -38,13 +38,19 @@ html {
   margin: 2%;
 }
 
+.h1-title {
+  color: rgb(239, 200, 149);
+  background-color: rgba(237, 223, 192, 0.0666666667);
+  padding: 1% 2% 1%;
+}
+
 .main {
   background-image: url(../media/background.jpeg);
   background-position: center;
   background-size: contain;
 }
 .main .subMain {
-  padding: 170px 10px 20px 10px;
+  padding: 170px 0px 20px 0px;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.789);
   max-width: 1400px;
@@ -64,7 +70,7 @@ html {
   text-shadow: 2px 2px 5px black;
 }
 .main .subMain .article .contenedorTexto .text {
-  color: antiquewhite;
+  color: rgb(239, 200, 149);
   text-shadow: 2px 2px 5px black;
   margin: 0 8px;
 }
@@ -146,6 +152,12 @@ html {
   border-radius: 20px;
   transition: 500ms;
 }
+.main .subMain1 .comoEntrenamosArticle .subtitle {
+  color: rgb(225, 133, 36);
+}
+.main .subMain1 .comoEntrenamosArticle .text {
+  color: rgb(239, 200, 149);
+}
 .main .subMain2 .comoEntrenamosVideo {
   width: 100%;
   max-width: 400px;
@@ -177,10 +189,6 @@ html {
 /* GALERIA */
 .carousel-item {
   max-height: 600px;
-}
-
-.carousel-inner {
-  border-radius: 20px;
 }
 
 .containerGaleriaImg {
@@ -251,7 +259,6 @@ html {
 
 /* HORARIOS */
 .asideHorarios {
-  /* border: 1px solid blue; */
   background-color: rgba(0, 0, 0, 0.59);
   border-radius: 10px;
 }
@@ -379,6 +386,9 @@ html {
   .main .subMain .article3 .imgMiniBeast {
     height: 50vh;
     min-height: 400px;
+  }
+  .h1-title {
+    grid-column: 1/3;
   }
   .footer .subFooter {
     grid-template-columns: 1fr 1fr;

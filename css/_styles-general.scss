@@ -43,13 +43,19 @@ html {
     }
 }
 
+.h1-title {
+    color: $color2;
+    background-color: #eddfc011;
+    padding: 1% 2% 1%;
+}
+
 .main {
     background-image: url(../media/background.jpeg);
     background-position: center;
     background-size: contain;
 
     .subMain {
-        @include pm(170px 10px 20px 10px, auto);
+        @include pm(170px 0px 20px 0px, auto);
         background-color: rgba(0, 0, 0, 0.789);
         max-width: 1400px;
         min-height: 700px;
