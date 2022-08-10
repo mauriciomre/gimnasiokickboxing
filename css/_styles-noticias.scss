@@ -1,7 +1,6 @@
 /* NOTICIAS */
 .noticiasArticle {
     height: auto;
-    /* border: 1px solid red; */
     margin: 20px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.113);
@@ -26,16 +25,14 @@
 }
 .articleDiv {
     text-align: left;
-    /* border: 1px solid green; */
 }
 .articleTitle {
     display: block;
     font-size: x-large;
     color: aliceblue;
-    /* border: 1px solid blue; */
     margin-bottom: 5px;
 }
 .text-focus-in {
 	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
