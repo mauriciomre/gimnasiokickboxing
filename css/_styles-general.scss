@@ -10,9 +10,9 @@ html {
     transition: $transition1;
 }
 
-.padding-top {
-    padding-top: 180px;
-}
+// .padding-top {
+//     padding-top: 180px;
+// }
 
 .navbar {
 
@@ -28,7 +28,6 @@ html {
                     margin-right: 1vw;
                 }
             }
-
         }
 
         .navbar-brand {
@@ -45,8 +44,12 @@ html {
 
 .h1-title {
     color: $color2;
-    background-color: #eddfc011;
+    // background-color: #eddfc011;
+    background-image: linear-gradient(to right, #e186240d, #baad3c2e, #93cb7937, #7edfbc2f, #95ecef32);
+    opacity: 50%;
     padding: 1% 2% 1%;
+    margin-bottom: 30px;
+    height: fit-content;
 }
 
 .main {
@@ -54,11 +57,15 @@ html {
     background-position: center;
     background-size: contain;
 
+    .subMain2 {
+        padding-top: 0 !important;
+        min-height: 50vh !important;
+    }
+
     .subMain {
-        @include pm(170px 0px 20px 0px, auto);
+        @include pm(110px 0px 20px 0px, auto);
         background-color: rgba(0, 0, 0, 0.789);
         max-width: 1400px;
-        min-height: 700px;
 
         .article {
             padding: 10px;
@@ -86,7 +93,7 @@ html {
             .imgLeft {
                 @include sizes(100%, 25hv);
                 background-image: url(../media/beast1.jpg);
-                max-height: 150px;
+                max-height: 25vw;
                 background-size: cover;
                 border-radius: 10px 10px 0 0;
                 transition: 0.6s;

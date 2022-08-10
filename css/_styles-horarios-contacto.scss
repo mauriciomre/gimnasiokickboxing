@@ -3,18 +3,27 @@
 .asideHorarios {
     background-color: rgba(0, 0, 0, 0.59);
     border-radius: 10px;
+    height: fit-content;
+    padding: 5px;
 }
+
 .horarios {
     list-style-type: none;
 }
+
 .horarios1 {
     font-size: x-large;
     margin-bottom: 10px;
-    text-shadow: 1px 1px 2px rgb(58, 32, 5);;;
+    text-shadow: 1px 1px 2px rgb(58, 32, 5);
+    ;
+    ;
     color: white;
     text-transform: capitalize;
 }
-.horarios2, .horarios6, .horarios8 {
+
+.horarios2,
+.horarios6,
+.horarios8 {
     font-size: large;
     margin-top: 15px;
     margin-bottom: 5px;
@@ -23,11 +32,11 @@
 }
 
 /* CONTACTO */
-.subMainContacto {
-    max-width: 1400px;
-    min-height: 1000px;
-    background-color: rgba(0, 0, 0, 0.789);
+
+.formContacto {
+    max-width: 600px;
 }
+
 .contactoSpan {
     display: block;
     /* border: 1px solid blue; */
@@ -35,6 +44,7 @@
     background-color: #eac162a4;
     border-radius: 10px;
 }
+
 .contactoInput {
     width: 100%;
     padding: 10px;
@@ -42,10 +52,12 @@
     border: none;
     color: white;
 }
+
 .contactoInput::placeholder {
     color: wheat;
 
 }
+
 .contactoSubmit {
     padding: 10px 20px;
     border: none;
@@ -54,6 +66,7 @@
     background-color: #e5a717c3;
     color: white;
 }
+
 .contactoSubmit:hover {
     cursor: pointer;
     background-color: #e5a71758;
