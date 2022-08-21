@@ -369,6 +369,11 @@ html {
   transition: 500ms;
 }
 
+.contactoinputComentario {
+  min-height: 8rem;
+  max-height: 20rem;
+}
+
 @media only screen and (min-width: 480px) {
   .main {
     background-size: cover;
