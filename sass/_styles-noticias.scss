@@ -1,56 +1,52 @@
 /* NOTICIAS */
 .noticiasArticle {
+  display: grid;
   height: auto;
   margin: 20px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.113);
   border-radius: 10px;
   position: relative;
+  transition: 0.5s;
+  
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.324);
+    transition: 0.5s ease-in;
 
+  }
 
 }
-.noticiasArticle1 {
-  width: auto;
-}
-.noticiasArticle2 {
-  width: auto;
-}
-.noticiasArticle3,
-.noticiasArticle4,
-.noticiasArticle5,
-.noticiasArticle6 {
-  width: auto;
-}
+
 .imgNoticias {
   width: 100%;
   border-radius: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 1rem;
   filter: blur(0px);
-  transition: filter 0.3s ease-in;
+  transition: 0.5s ease-in;
+  scale: 1;
 
   .noticiasArticle:hover & {
-    filter: blur(10px);
+    scale: 1.05;
   }
 }
 
 .noticiaTexto {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   display: block;
   position: absolute;
-  height: 0;
   top: 0;
   left: 0;
-  opacity: 0;
   padding: 18px 8%;
   background-color: rgba(0, 0, 0, 0.904);
-  transition: 0.8s ease;
+  transition: 0.4s ease;
   color: $color7;
   border-radius: 10px;
 
-  .noticiasArticle:hover & {
-    opacity: 1;
-    height: 100%;
+  &.collapse.show {
+    min-height: 100%;
+    display: grid;
   }
+
 }
 
 .noticiaHora {
@@ -67,9 +63,28 @@
   display: block;
   font-size: x-large;
   color: aliceblue;
-  margin-bottom: 5px;
+  margin-bottom: 1rem;
 }
+
+.articleText {
+  margin-bottom: 2rem;
+}
+
 .text-focus-in {
   -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
+
+.divBtn {
+  display: flex;
+}
+
+.divBtnRight {
+  display: flex;
+  justify-content: right;
+}
+
+.masInfo {
+  align-self: flex-end;
+}
+

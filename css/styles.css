@@ -160,6 +160,14 @@ html {
   margin: 10px;
 }
 
+.btn-warning {
+  background-color: rgba(255, 255, 255, 0.113);
+  color: rgb(239, 200, 149);
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 /* COMO ENTRENAMOS */
 .main .subMain1 .comoEntrenamosArticle {
   /* border: 1px solid red; */
@@ -240,63 +248,52 @@ html {
 
 /* NOTICIAS */
 .noticiasArticle {
+  display: grid;
   height: auto;
   margin: 20px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.113);
   border-radius: 10px;
   position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-
-.noticiasArticle1 {
-  width: auto;
-}
-
-.noticiasArticle2 {
-  width: auto;
-}
-
-.noticiasArticle3,
-.noticiasArticle4,
-.noticiasArticle5,
-.noticiasArticle6 {
-  width: auto;
+.noticiasArticle:hover {
+  background-color: rgba(0, 0, 0, 0.324);
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
 }
 
 .imgNoticias {
   width: 100%;
   border-radius: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 1rem;
   -webkit-filter: blur(0px);
           filter: blur(0px);
-  -webkit-transition: -webkit-filter 0.3s ease-in;
-  transition: -webkit-filter 0.3s ease-in;
-  transition: filter 0.3s ease-in;
-  transition: filter 0.3s ease-in, -webkit-filter 0.3s ease-in;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  scale: 1;
 }
 .noticiasArticle:hover .imgNoticias {
-  -webkit-filter: blur(10px);
-          filter: blur(10px);
+  scale: 1.05;
 }
 
 .noticiaTexto {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   display: block;
   position: absolute;
-  height: 0;
   top: 0;
   left: 0;
-  opacity: 0;
   padding: 18px 8%;
   background-color: rgba(0, 0, 0, 0.904);
-  -webkit-transition: 0.8s ease;
-  transition: 0.8s ease;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
   color: rgb(234, 218, 198);
   border-radius: 10px;
 }
-.noticiasArticle:hover .noticiaTexto {
-  opacity: 1;
-  height: 100%;
+.noticiaTexto.collapse.show {
+  min-height: 100%;
+  display: grid;
 }
 
 .noticiaHora {
@@ -314,12 +311,36 @@ html {
   display: block;
   font-size: x-large;
   color: aliceblue;
-  margin-bottom: 5px;
+  margin-bottom: 1rem;
+}
+
+.articleText {
+  margin-bottom: 2rem;
 }
 
 .text-focus-in {
   -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.divBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.divBtnRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.masInfo {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 /* HORARIOS */

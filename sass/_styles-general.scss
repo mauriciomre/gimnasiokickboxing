@@ -161,3 +161,10 @@ html {
         }
     }
 }
+
+.btn-warning {
+    background-color: rgba(255, 255, 255, 0.113);
+    color: $color2;
+    border: none;
+    transition: 0.3s;
+}
