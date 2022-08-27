@@ -1,4 +1,5 @@
 /* NOTICIAS */
+
 .noticiasArticle {
   display: grid;
   height: auto;
@@ -8,25 +9,12 @@
   border-radius: 10px;
   position: relative;
   transition: 0.5s;
+  align-content: start;
   
   &:hover {
     background-color: rgba(0, 0, 0, 0.324);
     transition: 0.5s ease-in;
 
-  }
-
-}
-
-.imgNoticias {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  filter: blur(0px);
-  transition: 0.5s ease-in;
-  scale: 1;
-
-  .noticiasArticle:hover & {
-    scale: 1.05;
   }
 }
 
@@ -46,7 +34,19 @@
     min-height: 100%;
     display: grid;
   }
+}
 
+.imgNoticias {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  filter: blur(0px);
+  transition: 0.5s ease-in;
+  scale: 1;
+
+  .noticiasArticle:hover & {
+    scale: 1.05;
+  }
 }
 
 .noticiaHora {
