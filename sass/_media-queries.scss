@@ -207,4 +207,7 @@
     .contenedorTexto {
         font-size: map-get($fonts, font-size-desktop);
     }
+    .subMainContainer {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }

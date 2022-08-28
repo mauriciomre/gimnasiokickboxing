@@ -170,18 +170,30 @@ html {
 
 /* COMO ENTRENAMOS */
 .main .subMain1 .comoEntrenamosArticle {
-  /* border: 1px solid red; */
-  padding: 5px;
-  margin: 20px;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(rgba(108, 14, 209, 0.0392156863)), color-stop(rgba(246, 0, 135, 0.0862745098)), color-stop(rgba(255, 46, 46, 0.0823529412)), color-stop(rgba(246, 164, 0, 0.0509803922)), to(rgba(166, 235, 18, 0.0666666667)));
+  background-image: linear-gradient(to left top, rgba(108, 14, 209, 0.0392156863), rgba(246, 0, 135, 0.0862745098), rgba(255, 46, 46, 0.0823529412), rgba(246, 164, 0, 0.0509803922), rgba(166, 235, 18, 0.0666666667));
 }
 .main .subMain1 .comoEntrenamosArticle .comoEntrenamosImg {
   width: 100%;
+  max-height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
   /* border: 1px solid blue; */
-  border-radius: 20px;
+  border-radius: 10px !important;
   -webkit-transition: 500ms;
   transition: 500ms;
+  margin-bottom: 1rem;
+}
+.main .subMain1 .comoEntrenamosArticle .comoEntrenamosImg1 {
+  -o-object-position: top;
+     object-position: top;
+}
+.main .subMain1 .comoEntrenamosArticle .comoEntrenamosImg3 {
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 .main .subMain1 .comoEntrenamosArticle .subtitle {
+  margin-bottom: 1rem;
   color: rgb(225, 133, 36);
 }
 .main .subMain1 .comoEntrenamosArticle .text {
@@ -236,6 +248,8 @@ html {
   border-radius: 20px;
   -webkit-transition: 500ms;
   transition: 500ms;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .galeriaImg:hover {
@@ -247,7 +261,7 @@ html {
 }
 
 /* NOTICIAS */
-.noticiasArticle {
+.noticiasArticle, .main .subMain1 .comoEntrenamosArticle {
   display: grid;
   height: auto;
   margin: 20px;
@@ -260,7 +274,7 @@ html {
   -ms-flex-line-pack: start;
       align-content: start;
 }
-.noticiasArticle:hover {
+.noticiasArticle:hover, .main .subMain1 .comoEntrenamosArticle:hover {
   background-color: rgba(0, 0, 0, 0.324);
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
@@ -294,7 +308,7 @@ html {
   transition: 0.5s ease-in;
   scale: 1;
 }
-.noticiasArticle:hover .imgNoticias {
+.noticiasArticle:hover .imgNoticias, .main .subMain1 .comoEntrenamosArticle:hover .imgNoticias {
   scale: 1.05;
 }
 
@@ -595,5 +609,8 @@ html {
 @media only screen and (min-width: 1220px) {
   .contenedorTexto {
     font-size: 1.8em;
+  }
+  .subMainContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -2,18 +2,30 @@
 .main {
     .subMain1 {
         .comoEntrenamosArticle {
-            /* border: 1px solid red; */
-            padding: 5px;
-            margin: 20px;
+            @extend .noticiasArticle;
+            background-image: linear-gradient(to left top, #6c0ed10a, #f6008716, #ff2e2e15, #f6a4000d, #a6eb1211);
 
             .comoEntrenamosImg {
                 width: 100%;
+                max-height: 450px;
+                object-fit: cover;
+                
                 /* border: 1px solid blue; */
-                border-radius: 20px;
+                border-radius: 10px!important;
                 transition: 500ms;
+                margin-bottom: 1rem;
+            }
+
+            .comoEntrenamosImg1 {
+                object-position: top;
+            }
+
+            .comoEntrenamosImg3 {
+                object-position: bottom;
             }
 
             .subtitle {
+                margin-bottom: 1rem;
                 color: $color1;
             }
 
