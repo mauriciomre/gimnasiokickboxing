@@ -260,6 +260,45 @@ html {
           box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.4235294118), 5px 5px 15px 5px rgba(0, 0, 0, 0.575);
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+  grid-column: 1/end;
+  margin-bottom: 20px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: block;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 40rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  opacity: 20%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  opacity: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 /* NOTICIAS */
 .noticiasArticle, .main .subMain1 .comoEntrenamosArticle {
   display: grid;
