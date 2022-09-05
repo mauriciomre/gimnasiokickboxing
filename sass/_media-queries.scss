@@ -151,6 +151,10 @@
     }
 }
 
+.swiper-slide img {
+    height: 40rem;
+}
+
 @media only screen and (min-width:1000px) {
     .navbar {
         .container-fluid {
@@ -160,6 +164,10 @@
                 }
             }
         }
+    }
+
+    .padding-top {
+        padding-top: 180px!important;
     }
 
     .footer {

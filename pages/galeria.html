@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
@@ -24,13 +25,14 @@
     <!-- INICIO NAV-BAR BOOTSTRAP -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top h4">
         <div class="container-fluid">
-            <a title="beastlogo" href="../index.html" class="navbar-brand"><img class="beastlogo"
-                    src="../media/beastlogo.svg" alt="logo del gimnasio"></a>
+            <a title="beastlogo" href="../index.html" class="navbar-brand" id="logo">
+                <img class="beastlogo" src="../media/beastlogo.svg" alt="logo del gimnasio">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav" id="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="../index.html">HOME</a>
                     </li>
@@ -148,48 +150,68 @@
             </div>
 
             <div class="subMainContainer">
-                <div class="containerGaleriaImg containerGaleriaImg1"><img class="galeriaImg galeriaImg1"
-                        src="../media/galeriaimg1.jpg" alt="el profe sosteniendo el trofeo al lado de Chavy"></div>
-                <div class="containerGaleriaImg containerGaleriaImg2"><img class="galeriaImg galeriaImg2"
-                        src="../media/galeriaimg2.jpg" alt="Chavy preparandose para pelear"></div>
-                <div class="containerGaleriaImg containerGaleriaImg3"><img class="galeriaImg galeriaImg3"
-                        src="../media/galeriaimg3.jpg" alt="referí levantando la mano de Chavy anunciando su victoria">
+                <div class="containerGaleriaImg containerGaleriaImg1" data-aos="zoom-in-up"><img
+                        class="galeriaImg galeriaImg1" src="../media/galeriaimg1.jpg"
+                        alt="el profe sosteniendo el trofeo al lado de Chavy"></div>
+                <div class="containerGaleriaImg containerGaleriaImg2" data-aos="zoom-in-up"><img
+                        class="galeriaImg galeriaImg2" src="../media/galeriaimg2.jpg"
+                        alt="Chavy preparandose para pelear"></div>
+                <div class="containerGaleriaImg containerGaleriaImg3" data-aos="zoom-in-up"><img
+                        class="galeriaImg galeriaImg3" src="../media/galeriaimg3.jpg"
+                        alt="referí levantando la mano de Chavy anunciando su victoria">
                 </div>
-                <div class="containerGaleriaImg containerGaleriaImg4"><img class="galeriaImg galeriaImg4"
-                        src="../media/galeriaimg4.jpg" alt="Chavy, Rancho y otro luchador con sus trofeos"></div>
-                <div class="containerGaleriaImg containerGaleriaImg5"><img class="galeriaImg galeriaImg5"
-                        src="../media/galeriaimg5.jpg" alt="el profe Mauro y Rancho antes de la pelea"></div>
-                <div class="containerGaleriaImg containerGaleriaImg6"><img class="galeriaImg galeriaImg6"
-                        src="../media/galeriaimg6.jpg" alt="Rancho con su trofeo, con Mauro y otro luchador a su lado">
+                <div class="containerGaleriaImg containerGaleriaImg4" data-aos="zoom-in-up"><img
+                        class="galeriaImg galeriaImg4" src="../media/galeriaimg4.jpg"
+                        alt="Chavy, Rancho y otro luchador con sus trofeos"></div>
+                <div class="containerGaleriaImg containerGaleriaImg5" data-aos="zoom-in-up"><img
+                        class="galeriaImg galeriaImg5" src="../media/galeriaimg5.jpg"
+                        alt="el profe Mauro y Rancho antes de la pelea"></div>
+                <div class="containerGaleriaImg containerGaleriaImg6" data-aos="zoom-in-up"><img
+                        class="galeriaImg galeriaImg6" src="../media/galeriaimg6.jpg"
+                        alt="Rancho con su trofeo, con Mauro y otro luchador a su lado">
                 </div>
-                <div class="containerGaleriaImg containerGaleriaImg7"><img class="galeriaImg galeriaImg7"
-                        src="../media/galeriaimg7.jpeg" alt="dos alumnos haciendo glappling en el seminario"></div>
-                <div class="containerGaleriaImg containerGaleriaImg8"><img class="galeriaImg galeriaImg8"
-                        src="../media/galeriaimg8.jpeg" alt="profe de grappling enseñando a tecnica a un alumno"></div>
-                <div class="containerGaleriaImg containerGaleriaImg9"><img class="galeriaImg galeriaImg9"
-                        src="../media/galeriaimg9.jpeg" alt="dos alumnos haciendo grappling en el seminario"></div>
-                <div class="containerGaleriaImg containerGaleriaImg10"><img class="galeriaImg galeriaImg10"
-                        src="../media/galeriaimg10.jpeg" alt="varios alumnos practicando grappling"></div>
-                <div class="containerGaleriaImg containerGaleriaImg11"><img class="galeriaImg galeriaImg11"
-                        src="../media/galeriaimg11.jpeg" alt="alumnos en el seminario de Franco Forgione"></div>
-                <div class="containerGaleriaImg containerGaleriaImg12"><img class="galeriaImg galeriaImg12"
-                        src="../media/galeriaimg12.jpeg" alt="alumnos en el seminario de Franco Forgione"></div>
-                <div class="containerGaleriaImg containerGaleriaImg13"><img class="galeriaImg galeriaImg13"
-                        src="../media/galeriaimg13.jpeg" alt="alumnos en el seminario de Franco Forgione"></div>
-                <div class="containerGaleriaImg containerGaleriaImg14"><img class="galeriaImg galeriaImg14"
-                        src="../media/galeriaimg14.jpeg" alt="alumnos en el seminario de Franco Forgione"></div>
-                <div class="containerGaleriaImg containerGaleriaImg15"><img class="galeriaImg galeriaImg15"
-                        src="../media/galeriaimg15.jpeg" alt="alumnos en el seminario de Franco Forgione"></div>
-                <div class="containerGaleriaImg containerGaleriaImg16"><img class="galeriaImg galeriaImg16"
-                        src="../media/galeriaimg16.jpeg" alt="alumnos en el seminario de Franco Forgione"></div>
-                <div class="containerGaleriaImg containerGaleriaImg17"><img class="galeriaImg galeriaImg17"
-                        src="../media/galeriaimg17.jpeg" alt="alumnos en el seminario de Franco Forgione"></div>
-                <div class="containerGaleriaImg containerGaleriaImg18"><img class="galeriaImg galeriaImg18"
-                        src="../media/galeriaimg18.jpeg" alt="alumnos en el seminario de Franco Forgione"></div>
-                <div class="containerGaleriaImg containerGaleriaImg19"><img class="galeriaImg galeriaImg19"
-                        src="../media/galeriaimg19.jpeg" alt="alumnos en el seminario de Franco Forgione"></div>
-                <div class="containerGaleriaImg containerGaleriaImg20"><img class="galeriaImg galeriaImg20"
-                        src="../media/galeriaimg20.jpeg" alt="alumnos en el seminario de Franco Forgione"></div>
+                <div class="containerGaleriaImg containerGaleriaImg7" data-aos="zoom-in-up"><img
+                        class="galeriaImg galeriaImg7" src="../media/galeriaimg7.jpeg"
+                        alt="dos alumnos haciendo glappling en el seminario"></div>
+                <div class="containerGaleriaImg containerGaleriaImg8" data-aos="zoom-in-up"><img
+                        class="galeriaImg galeriaImg8" src="../media/galeriaimg8.jpeg"
+                        alt="profe de grappling enseñando a tecnica a un alumno"></div>
+                <div class="containerGaleriaImg containerGaleriaImg9" data-aos="zoom-in-up"><img
+                        class="galeriaImg galeriaImg9" src="../media/galeriaimg9.jpeg"
+                        alt="dos alumnos haciendo grappling en el seminario"></div>
+                <div class="containerGaleriaImg containerGaleriaImg10" data-aos="zoom-in-up"><img
+                        class="galeriaImg galeriaImg10" src="../media/galeriaimg10.jpeg"
+                        alt="varios alumnos practicando grappling"></div>
+                <div class="containerGaleriaImg containerGaleriaImg11" data-aos="zoom-in-up"><img
+                        class="galeriaImg galeriaImg11" src="../media/galeriaimg11.jpeg"
+                        alt="alumnos en el seminario de Franco Forgione"></div>
+                <div class="containerGaleriaImg containerGaleriaImg12" data-aos="zoom-in-up"><img
+                        class="galeriaImg galeriaImg12" src="../media/galeriaimg12.jpeg"
+                        alt="alumnos en el seminario de Franco Forgione"></div>
+                <div class="containerGaleriaImg containerGaleriaImg13" data-aos="zoom-in-up"><img
+                        class="galeriaImg galeriaImg13" src="../media/galeriaimg13.jpeg"
+                        alt="alumnos en el seminario de Franco Forgione"></div>
+                <div class="containerGaleriaImg containerGaleriaImg14" data-aos="zoom-in-up"><img
+                        class="galeriaImg galeriaImg14" src="../media/galeriaimg14.jpeg"
+                        alt="alumnos en el seminario de Franco Forgione"></div>
+                <div class="containerGaleriaImg containerGaleriaImg15" data-aos="zoom-in-up"><img
+                        class="galeriaImg galeriaImg15" src="../media/galeriaimg15.jpeg"
+                        alt="alumnos en el seminario de Franco Forgione"></div>
+                <div class="containerGaleriaImg containerGaleriaImg16" data-aos="zoom-in-up"><img
+                        class="galeriaImg galeriaImg16" src="../media/galeriaimg16.jpeg"
+                        alt="alumnos en el seminario de Franco Forgione"></div>
+                <div class="containerGaleriaImg containerGaleriaImg17" data-aos="zoom-in-up"><img
+                        class="galeriaImg galeriaImg17" src="../media/galeriaimg17.jpeg"
+                        alt="alumnos en el seminario de Franco Forgione"></div>
+                <div class="containerGaleriaImg containerGaleriaImg18" data-aos="zoom-in-up"><img
+                        class="galeriaImg galeriaImg18" src="../media/galeriaimg18.jpeg"
+                        alt="alumnos en el seminario de Franco Forgione"></div>
+                <div class="containerGaleriaImg containerGaleriaImg19" data-aos="zoom-in-up"><img
+                        class="galeriaImg galeriaImg19" src="../media/galeriaimg19.jpeg"
+                        alt="alumnos en el seminario de Franco Forgione"></div>
+                <div class="containerGaleriaImg containerGaleriaImg20" data-aos="zoom-in-up"><img
+                        class="galeriaImg galeriaImg20" src="../media/galeriaimg20.jpeg"
+                        alt="alumnos en el seminario de Franco Forgione"></div>
             </div>
         </div>
     </main>
@@ -246,6 +268,11 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="../js/swiper.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="../js/navbar.js"></script>
 </body>
 
 </html>
