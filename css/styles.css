@@ -67,7 +67,7 @@ html {
 }
 .navbar .container-fluid .navbar-brand .beastlogo {
   width: 100%;
-  max-width: 120px;
+  max-width: 70px;
   min-width: 50px;
   margin: 2%;
   -webkit-transition: 0.5s;
@@ -324,6 +324,7 @@ html {
   display: block;
   width: 100%;
   height: 30rem;
+  max-height: 35rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -635,6 +636,9 @@ html {
     grid-column: 2/4;
     grid-row: 4/6;
   }
+  .beastlogo {
+    max-width: 120px !important;
+  }
   .footer .subFooter {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -651,10 +655,6 @@ html {
     grid-column: 3/4;
   }
 }
-.swiper-slide img {
-  height: 40rem;
-}
-
 @media only screen and (min-width: 1000px) {
   .navbar .container-fluid .navbar-brand .beastlogo {
     min-width: 90px;
